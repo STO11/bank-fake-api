@@ -12,3 +12,4 @@ database/*.sqlite
 data
 .npm
 .config
+.bash_history
