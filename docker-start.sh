@@ -1,19 +1,31 @@
 #!/bin/bash
 
-echo "\n\n\nNpm install:"
-npm install
+#echo "\n\n\nNpm install:"
+#npm install
 
 echo "\n\n\nCopy .env file:"
 file="./.env.docker"
-if [ -f "$file" ]
+fileEnv="./.env"
+if [ -f "$fileEnv" ]
 then
-	echo "$file found."
+	echo "$fileEnv found not created"
+else
 	cp $file ./.env
 	echo ".env created"
-else
-	echo "$file not found."
-	exit 1
+	#exit 1
 fi
+
+echo "\n\n\nMysql install:"
+npm install mysql@^2.18.1 --save
+
+echo "\n\n\nSqlite3 install:"
+npm install sqlite3@^5.0.2 --save
+
+echo "\n\n\nInstall vow for tests:"
+adonis install @adonisjs/vow
+
+echo "\n\n\nGenerate key:"
+adonis key:generate
 
 echo "\n\n\nRun migration:"
 adonis migration:run --force

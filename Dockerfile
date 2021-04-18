@@ -1,4 +1,4 @@
-FROM node:10.13
+FROM node:12.13.0
 
 RUN useradd --user-group --create-home --shell /bin/false app
 
@@ -8,6 +8,7 @@ RUN chown -R app:app $HOME/*
 
 USER root
 WORKDIR $HOME
+RUN npm i pm2 -g
 RUN npm i -g @adonisjs/cli
 RUN npm install
-RUN adonis install @adonisjs/vow
+RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim -y

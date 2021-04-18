@@ -22,15 +22,16 @@ services:
     image: mysql:5.7
     volumes:
       - "./data/:/var/lib/mysql"
-      #dump dir for production import
       - "./dump/:/docker-entrypoint-initdb.d"
     ports:
-      - "3306:3306"
+      - "8888:3306"
     networks:
       - default
     environment:
       MYSQL_DATABASE: "${DB_DATABASE}"
       MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
 
 #define network
 networks:
