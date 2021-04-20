@@ -1,14 +1,10 @@
 'use strict'
 
 const gql = require('graphql-tag')
-const { print } = require('graphql/language/printer')
 const axios = require('axios')
-const { parseGraphQLJSON } = require('graphql-tools')
-const { parseValue } = require('graphql')
 const Env = use('Env')
 const { test, trait } = use('Test/Suite')('Create')
 trait('Test/ApiClient')
-const Factory = use('Factory')
 const url = `${Env.get('URL_TESTING')}/bank`;
 
 test('should created new account', async ({ client, assert, faker  }) => {
