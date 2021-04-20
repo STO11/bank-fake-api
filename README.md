@@ -12,17 +12,24 @@ docker-compose up -d
 ```
 
 ### Utilização
+
+
 =================
-=================
+
 - Após subir a container deve-se aguardar os scripts de configuração e o run dos testes, após isso acessar o link http://127.0.0.1:3333] e aparecerá a mensagem no browser {"greeting":"Working!!"}
+
 =================
 
 =================
+
 - Utilize o seguinte endpoint para as requests http://127.0.0.1:3333/bank
+
 =================
 
 =================
+
 - Para você criar uma nova conta utilize o seguinte:
+
 =================
 ```bash
 mutation {
@@ -37,7 +44,9 @@ mutation {
 }
 ```
 =================
+
 - Para você ver todas as contas:
+
 =================
 ```bash
 query {
@@ -54,7 +63,9 @@ query {
 }
 ```
 =================
+
 - Para você ver o saldo da sua conta:
+
 =================
 ```bash
 query {
@@ -68,7 +79,9 @@ query {
 }
 ```
 =================
+
 - Para você sacar da sua conta:
+
 =================
 ```bash
 mutation {
@@ -83,7 +96,9 @@ mutation {
 }
 ```
 =================
+
 - Para você depositar em sua conta:
+
 =================
 ```bash
 mutation {
@@ -99,7 +114,9 @@ mutation {
 ```
 
 =================
+
 - Para rodar os testes você necessita entrar na container:
+
 =================
 ```bash
 docker exec -it bank-nodejs /bin/bash
