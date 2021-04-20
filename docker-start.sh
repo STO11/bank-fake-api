@@ -8,12 +8,26 @@ file="./.env.docker"
 fileEnv="./.env"
 if [ -f "$fileEnv" ]
 then
-	echo "$fileEnv found not created"
+	echo "$fileEnv found and not created"
 else
 	cp $file ./.env
 	echo ".env created"
 	#exit 1
 fi
+
+echo "\n\n\Bank sqlite test file:"
+databaseTeste = "./database/bank.sqlite"
+if [ -f "$databaseTeste" ]
+then
+	echo "$databaseTeste found and not created"
+else
+	touch ./database/bank.sqlite
+	echo "bank.sqlite created"
+	#exit 1
+fi
+
+echo "\n\n\nGraphql install:"
+npm install graphql adonis-apollo-server graphql-tools slugify --save
 
 echo "\n\n\nMysql install:"
 npm install mysql@^2.18.1 --save
@@ -29,6 +43,9 @@ adonis key:generate
 
 echo "\n\n\nRun migration:"
 adonis migration:run --force
+
+echo "\n\n\nStart testing:"
+adonis serve --dev --polling
 
 echo "\n\n\nStart node server:"
 adonis serve --dev --polling
