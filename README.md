@@ -13,24 +13,18 @@ docker-compose up -d
 
 ### Utilização
 
-
-=================
+##
 
 - Após subir a container deve-se aguardar os scripts de configuração e o run dos testes, após isso acessar o link http://127.0.0.1:3333] e aparecerá a mensagem no browser {"greeting":"Working!!"}
 
-=================
-
-=================
 
 - Utilize o seguinte endpoint para as requests http://127.0.0.1:3333/bank
+##
 
-=================
-
-=================
 
 - Para você criar uma nova conta utilize o seguinte:
+##
 
-=================
 ```bash
 mutation {
     createAccount(username: "User Name", number: 4658629, email: "teste@email.com", password: "123456") {
