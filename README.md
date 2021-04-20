@@ -13,8 +13,9 @@ git clone https://github.com/STO11/bank-fake-api.git
 cd bank-fake-api
 ```
 
+- Copie .env.example para .env (crie esse arquivo) ou:
 ```bash
-npm install
+cp .env.example .env
 ```
 
 - Para utilizar a api suba as containers docker:
