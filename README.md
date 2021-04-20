@@ -2,7 +2,7 @@
     <a href="#">🔗 Aplicação de transação de bancária </a>
 </h1>
 
-<p align="center">🚀 API de transação bancária para estudos (AdonisJS + Graphql + Docker + Testes) </p>
+<p align="center">🚀 API de transação bancária para estudos (AdonisJS + Mysql + Graphql + Sqlite + Docker + Testes) </p>
 
 ## Setup
 
