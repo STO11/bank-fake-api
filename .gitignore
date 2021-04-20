@@ -8,7 +8,6 @@ tmp
 .env
 
 # The development sqlite file
-./data
 .npm
 .config
 .bash_history

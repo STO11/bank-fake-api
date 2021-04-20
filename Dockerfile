@@ -12,3 +12,6 @@ RUN npm i pm2 -g
 RUN npm i -g @adonisjs/cli
 RUN npm install
 RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim -y
+
+
+CMD ["/bin/sh", "docker-start.sh"]
