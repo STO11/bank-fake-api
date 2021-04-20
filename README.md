@@ -5,6 +5,9 @@
 <p align="center">🚀 API de transação bancária para estudos (AdonisJS + Mysql + Graphql + Sqlite + Docker + Testes) </p>
 
 ## Setup
+```bash
+git clone https://github.com/STO11/bank-fake-api.git
+```
 
 ```bash
 cd bank-fake-api
