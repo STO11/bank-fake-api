@@ -103,7 +103,7 @@ mutation {
 ```bash
 docker exec -it bank-nodejs /bin/bash
 ```
-e rodar o comando
+e rodar o comando (ele ira executar os testes no sqlite em /database/bank.sqlite rodará as migrations e excluirá logo em seguida)
 ```bash
 adonis test
 ```
