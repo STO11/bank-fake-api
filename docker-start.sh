@@ -44,8 +44,8 @@ adonis key:generate
 echo "\n\n\nRun migration:"
 adonis migration:run --force
 
-echo "\n\n\nStart testing:"
+echo "\n\n\nStart node server:"
 adonis serve --dev --polling
 
-echo "\n\n\nStart node server:"
+echo "\n\n\nStart testing:"
 adonis serve --dev --polling
