@@ -36,7 +36,7 @@ mutation {
     }
 }
 ```
-
+##
 - Para você ver todas as contas:
 ##
 ```bash
@@ -67,11 +67,9 @@ query {
     }
 }
 ```
-=================
-
+##
 - Para você sacar da sua conta:
-
-=================
+##
 ```bash
 mutation {
     withdraw(conta: 4658629, valor: 100) {
@@ -84,11 +82,9 @@ mutation {
     }
 }
 ```
-=================
-
+##
 - Para você depositar em sua conta:
-
-=================
+##
 ```bash
 mutation {
     deposit(conta: 4658629, valor: 100.30) {
@@ -101,12 +97,9 @@ mutation {
     }
 }
 ```
-
-=================
-
+##
 - Para rodar os testes você necessita entrar na container:
-
-=================
+##
 ```bash
 docker exec -it bank-nodejs /bin/bash
 ```
