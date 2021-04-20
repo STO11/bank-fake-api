@@ -9,7 +9,7 @@ tmp
 
 # The development sqlite file
 database/*.sqlite
-data
+./data
 .npm
 .config
 .bash_history
