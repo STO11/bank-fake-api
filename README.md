@@ -6,6 +6,14 @@
 
 ## Setup
 
+```bash
+cd bank-fake-api
+```
+
+```bash
+npm install
+```
+
 - Para utilizar a api suba as containers docker:
 ```bash
 docker-compose up -d
