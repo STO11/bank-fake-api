@@ -24,7 +24,6 @@ docker-compose up -d
 
 - Para você criar uma nova conta utilize o seguinte:
 ##
-
 ```bash
 mutation {
     createAccount(username: "User Name", number: 4658629, email: "teste@email.com", password: "123456") {
@@ -37,11 +36,9 @@ mutation {
     }
 }
 ```
-=================
 
 - Para você ver todas as contas:
-
-=================
+##
 ```bash
 query {
     allAccounts {
@@ -56,11 +53,9 @@ query {
     }
 }
 ```
-=================
-
+##
 - Para você ver o saldo da sua conta:
-
-=================
+##
 ```bash
 query {
     balance(conta: 4658629) {
