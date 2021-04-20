@@ -8,7 +8,6 @@ tmp
 .env
 
 # The development sqlite file
-database/*.sqlite
 ./data
 .npm
 .config

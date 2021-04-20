@@ -3,28 +3,28 @@
 #echo "\n\n\nNpm install:"
 #npm install
 
-# echo "\n\n\nCopy .env file:"
-# file="./.env.docker"
-# fileEnv="./.env"
-# if [ -f "$fileEnv" ]
-# then
-# 	echo "$fileEnv found and not created"
-# else
-# 	cp $file ./.env
-# 	echo ".env created"
-# 	#exit 1
-# fi
+echo "\n\n\nCopy .env file:"
+file="./.env.docker"
+fileEnv="./.env"
+if [ -f "$fileEnv" ]
+then
+	echo "$fileEnv found and not created"
+else
+	cp $file ./.env
+	echo ".env created"
+	#exit 1
+fi
 
-# echo "\n\n\Bank sqlite test file:"
-# databaseTeste = "./database/bank.sqlite"
-# if [ -f "$databaseTeste" ]
-# then
-# 	echo "$databaseTeste found and not created"
-# else
-# 	touch ./database/bank.sqlite
-# 	echo "bank.sqlite created"
-# 	#exit 1
-# fi
+echo "\n\n\Bank sqlite test file:"
+databaseTeste = "./database/bank.sqlite"
+if [ -f "$databaseTeste" ]
+then
+	echo "$databaseTeste found and not created"
+else
+	touch ./database/bank.sqlite
+	echo "bank.sqlite created"
+	#exit 1
+fi
 
 echo "\n\n\nGraphql install:"
 npm install graphql adonis-apollo-server graphql-tools slugify --save
