@@ -1,9 +1,8 @@
 <h1 align="center">
     <a href="#">🔗 Aplicação de transação de bancária </a>
-    <a href="#">(AdonisJS + Graphql + Docker + Testes) </a>
 </h1>
 
-<p align="center">🚀 API de transação bancária para estudos</p>
+<p align="center">🚀 API de transação bancária para estudos (AdonisJS + Graphql + Docker + Testes) </p>
 
 ## Setup
 
