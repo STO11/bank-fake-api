@@ -22,5 +22,5 @@ test('should deposit in account', async ({ client, assert, faker }) => {
   `
   const response = await client.post(url).type('string').send({ query: query }).end();
   response.assertStatus(200);
-  response.assertText(response.text)
+  assert.equal(response.text, '{"data":{"deposit":{"id":1,"number":1234567,"balance":100.3,"user":{"username":"User Teste Name"}}}}');
 })

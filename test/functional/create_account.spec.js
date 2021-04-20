@@ -22,5 +22,5 @@ test('should created new account', async ({ client, assert, faker  }) => {
   `
   const response =  await client.post(url).send({query: query}).end();
   response.assertStatus(200);
-  response.assertText(response.text)
+  assert.equal(response.text, '{"data":{"createAccount":{"id":1,"username":"User Teste Name","email":"teste2@email.com","accounts":[{"number":1234567}]}}}');
 })

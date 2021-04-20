@@ -23,5 +23,5 @@ test('should withdraw in account', async ({ client, assert  }) => {
   `
   const response =  await client.post(url).type('string').send({query: query}).end();
   response.assertStatus(200);
-  response.assertText(response.text)
+  assert.equal(response.text, '{"data":{"withdraw":{"id":1,"number":1234567,"balance":10.299999999999997,"user":{"username":"User Teste Name"}}}}');
 })
